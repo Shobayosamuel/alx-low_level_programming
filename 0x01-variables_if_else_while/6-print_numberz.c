@@ -1,20 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - prints single digits from 0-10
- * followed by a new line
+ * main - prints all single digit numbers of base
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int num = 0;
+	int n;
 
-	while (num < 10)
-    {
-        putchar(num);
-        num++;
-    }
-    
-	putchar('\n');
+	for (n = 0; n < 10; n++)
+		printf("%d", n);
+	printf("\n");
 	return (0);
 }
