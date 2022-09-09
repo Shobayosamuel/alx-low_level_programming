@@ -5,12 +5,14 @@
  * newline
  * returns 0
  */
-int main(void) {
-    char letter;
-    for ( letter = "a"; i < "z"; letter++)
-    {
-        putchar(letter);
-    }
-    putchar("\n");
-    return (0);
+int main(void)
+{
+	char lett;
+
+	for (lett = 'a'; lett <= 'z'; lett++)
+	{
+		putchar(lett);
+	}
+	putchar('\n');
+	return (0);
 }
