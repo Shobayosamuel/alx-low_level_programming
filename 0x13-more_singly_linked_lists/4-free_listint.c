@@ -2,18 +2,16 @@
 
 /**
  * free_listint - frees a linked list
- * @head: head of the list
- *
- * Return: void
+ * @head: listint_t list to be freed
  */
+void free_listint(listint_t *head)
+{
+	listint_t *temp;
 
-void free_listint(listint_t *head){
-    listint_t *temp;
-    while (head != NULL)
-    {
-        temp = head;
-        head = head->next;
-        free(temp);
-    }
-    
+	while (head)
+	{
+		temp = head->next;
+		free(head);
+		head = temp;
+	}
 }
