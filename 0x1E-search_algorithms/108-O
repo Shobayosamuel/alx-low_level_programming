@@ -1,1 +1,1 @@
-O(sqrt(log n))
+O(sqrt(n))
